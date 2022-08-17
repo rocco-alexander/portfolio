@@ -1,0 +1,7 @@
+.text-underline-hover:hover{
+    text-decoration: underline;
+}
+
+.letter-spacing{
+    letter-spacing: .4rem;
+}
