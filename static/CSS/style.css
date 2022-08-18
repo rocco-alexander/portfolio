@@ -46,6 +46,7 @@
     font-size: 60px;
     font-weight: bolder;
 }
+
 .hero-text p{
     margin-bottom: 0;
     font-family: 'Rubik', sans-serif;
@@ -72,4 +73,32 @@
 ::-moz-selection {
     background: #000; 
     color: white;
-  }
+}
+
+@media only screen and (max-width: 425px){
+	.hero-text p{
+        font-size: 2rem;
+    }
+}
+
+/* Just for those SE users */
+@media only screen and (max-height: 667px){
+	.white-space{
+        height: 0px;
+
+    }
+    .hero-text{
+        margin-top: 1rem;
+        font-size: 60px;
+        font-weight: bolder;
+    }
+    .hero{
+        width: 250px;
+        height: 250px;
+    }
+    .button__portfolio-cta{
+        width: 250px;
+        font-size: 1.5rem;
+    }
+    
+}
