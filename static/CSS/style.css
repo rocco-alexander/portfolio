@@ -3,5 +3,23 @@
 }
 
 .letter-spacing{
-    letter-spacing: .4rem;
+    letter-spacing: .5rem;
+}
+
+@media only screen and (max-width: 566px) {
+    .logo{
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        font-size: 5vw;
+    }
+    .fixed-bottom-mobile{
+        justify-content: center;
+        position: fixed;   
+        bottom: 0;
+        width: 100%;
+    }
+    .padding-top-mobile{
+        padding-top: 2rem;
+    }
 }
