@@ -72,6 +72,9 @@
 	.hero-text p{
         font-size: 2rem;
     }
+    .button__portfolio-cta{
+        margin-bottom: 0;
+    }
 }
 
 /* Just for those SE users */
@@ -92,7 +95,6 @@
         width: 250px;
         font-size: 1.5rem;
     }
-    
 }
 
 
