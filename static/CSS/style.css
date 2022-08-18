@@ -65,7 +65,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-@media only screen and (max-width: 425px){
+@media (max-width: 425px){
     .hero-text{
         margin-top: 1.5rem;
     }
@@ -75,7 +75,7 @@
 }
 
 /* Just for those SE users */
-@media only screen and (max-height: 667px){
+@media (max-height: 667px){
 	.white-space{
         height: 0px;
     }
