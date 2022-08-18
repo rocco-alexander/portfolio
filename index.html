@@ -13,12 +13,12 @@
   <body>
 
     <!-- Navbar -->
-  <div class="container text-center">
+  <div class="container">
     <!-- Set up toggle -->
-    <nav class="navbar fixed-bottom-mobile navbar-expand-md navbar-light bg-white" data-bs-backdrop="static" data>
-        <a href="./index.html" class="logo navbar-brand fw-bold letter-spacing">ROCCO ALEXANDER</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-white" data-bs-backdrop="static" data>
+        <a href="./index.html" class="navbar-brand fw-bold letter-spacing">ROCCO ALEXANDER</a>
         <button
-        class="navbar-toggler fw-bold p-2 mb-3"
+        class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#toggleMobileMenu"
@@ -26,32 +26,33 @@
         aria-expanded="false"
         aria-label="Toggle navigation">
 
-        
-        MENU</button>
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <!-- Nav content goes here  -->
-        <div class="collapse navbar-collapse" id="toggleMobileMenu">
-            <ul class="navbar-nav text-center ms-auto">
-                <li class="text-underline-hover">
-                    <a href="index.html" class="nav-link">HOME</a>
-                </li>
-                <li class="text-underline-hover">
-                    <a href="/src/HTML/resume.html" class="nav-link">RESUME</a>
-                </li>
-                <li class="text-underline-hover">
-                    <a href="/src/HTML/portfolio.html" class="nav-link">PORTFOLIO</a>
-                </li>
-                <li class="text-underline-hover">
-                    <a href="#" class="nav-link">CONTACT</a>
-                </li>
-            </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav text-center ms-auto">
+            <li class="text-underline-hover">
+                <a href="index.html" class="nav-link">HOME</a>
+            </li>
+            <li class="text-underline-hover">
+                <a href="/src/HTML/resume.html" class="nav-link">RESUME</a>
+            </li>
+            <li class="text-underline-hover">
+                <a href="/src/HTML/portfolio.html" class="nav-link">PORTFOLIO</a>
+            </li>
+            <li class="text-underline-hover">
+                <a href="#" class="nav-link">CONTACT</a>
+            </li>
+        </ul>
+    </div>
     </nav>
   </div>
+
 <!-- Hero Section -->
 
     <div class="container mt-5">
         <div class="row d-flex align-items-center">
-            <div class="col-lg-5 padding-top-mobile">
+            <div class="col-lg-5">
                 <h1 class="fw-bold">Hi, I'm Rocco.</h1>
                 <p class="fs-4">I have studied both Computer Programming and UX Design. I want to help build wonderful, usable and enjoyable products.</p>
                 <a href="/src/HTML/portfolio.html" class="btn btn-dark mb-5 fw-bold fs-5 ps-3 pe-3">View Portfolio</a>
