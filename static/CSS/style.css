@@ -63,3 +63,13 @@
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
 }
+
+/* Change selection color to black */
+::selection{
+    background: #000;
+    color: white;
+}
+::-moz-selection {
+    background: #000; 
+    color: white;
+  }
