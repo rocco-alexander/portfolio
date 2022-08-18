@@ -65,7 +65,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-@media (max-width: 425px){
+@media (min-width: 320px){
     .hero-text{
         margin-top: 1.5rem;
     }
