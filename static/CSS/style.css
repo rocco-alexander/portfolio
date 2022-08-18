@@ -65,7 +65,7 @@
     font-family: 'Rubik', sans-serif;
 }
 
-@media only screen and (max-width: 480px) and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (max-width: 480px) and (min-width: 280px) and (-webkit-min-device-pixel-ratio: 1){
     .hero-text{
         margin-top: 1.5rem;
     }
@@ -75,12 +75,15 @@
     .button__portfolio-cta{
         margin-bottom: 0;
     }
+    .white-space{
+        height: 0px;
+    }
 }
 
 /* Just for those SE users */
 @media (max-height: 667px){
 	.white-space{
-        height: 0px;
+        display: none;
     }
     .hero-text{
         margin-top: 1rem;
