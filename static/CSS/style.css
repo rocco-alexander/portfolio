@@ -1,7 +1,56 @@
-.text-underline-hover:hover{
-    text-decoration: underline;
+
+.top-navigation{
+    background: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-top: 50px;
 }
 
-.letter-spacing{
-    letter-spacing: .3rem;
+.logo{
+    margin-bottom: 10px;
+}
+.hero{
+    margin-top: 60px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.nav-link{
+    margin: 0 .5rem;
+}
+
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-text{
+    margin-top: 80px;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.hero-text p{
+    margin-bottom: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.button__portfolio-cta{
+    margin-top: 60px;
+    border: 2px solid #000;
+    background: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
 }
