@@ -1,14 +1,14 @@
 // Referenced from https://editor.p5js.org/codingtrain/sketches/LNBpdYQHP
 // CODE TRAIN 
 
-let vid;
+let img;
 let sourceText;
 let words;
 let startIndex = 0;
 
 
 function preload() {
-    vid = loadImage("rocco.jpg")
+    img = loadImage("rocco.jpg")
     sourceText = loadStrings("skillsList.txt");
 }
 
@@ -22,17 +22,17 @@ function setup() {
 function draw() {
     frameRate(10);
     let charIndex = startIndex;
-    let w = width / vid.width;
-    let h = height / vid.height;
+    let w = width / img.width;
+    let h = height / img.height;
 
-    vid.loadPixels()
+    img.loadPixels()
     
-    for (let j = 0; j < vid.height; j++){
-        for (let i = 0 ; i <vid.width; i++ ){
-            const pixelIndex = (i + j * vid.width) * 4;
-            const r = vid.pixels[pixelIndex + 0] 
-            const g = vid.pixels[pixelIndex + 1]
-            const b = vid.pixels[pixelIndex + 2]
+    for (let j = 0; j < img.height; j++){
+        for (let i = 0 ; i <img.width; i++ ){
+            const pixelIndex = (i + j * img.width) * 4;
+            const r = img.pixels[pixelIndex + 0] 
+            const g = img.pixels[pixelIndex + 1]
+            const b = img.pixels[pixelIndex + 2]
             let avg = (r + g + b) / 2
             noStroke()
             fill(avg)
