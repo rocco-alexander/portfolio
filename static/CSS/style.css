@@ -51,7 +51,6 @@
     margin-bottom: 0;
     font-family: 'Rubik', sans-serif;
 }
-
 .button__portfolio-cta{
     width: 350px;
     margin-bottom: 1rem;
@@ -63,7 +62,11 @@
     font-weight: 400;
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
+}.button__portfolio-cta a {
+    text-decoration: none;
+    color: #fff
 }
+/* its a bit hacky but it works */
 
 @media only screen and (max-width: 480px) and (min-width: 280px) and (-webkit-min-device-pixel-ratio: 1){
     .hero-text{
