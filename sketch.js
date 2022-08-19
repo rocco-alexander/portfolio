@@ -8,30 +8,19 @@ let startIndex = 0;
 
 
 function preload() {
-    vid = loadImage("rocco32.jpg")
+    vid = loadImage("rocco.jpg")
     sourceText = loadStrings("skillsList.txt");
-    // vid = loadImage("ezgif-5-53e35b7cee.gif")
-    // vid = loadImage("ezgif-5-8d880efd64.gif")
 }
 
 function setup() {
     let canvas = createCanvas(350, 350);
     canvas.parent("ascii-container")
-    // vid= createVideo('video.mp4')
     words = sourceText.join(" ");
-
-//   vid.size(48 ,48);
-//   vid.volume(0);
-//   vid.loop();
-//   vid.hide(); // hides the html video loader
-//   vid.autoplay(true)
-//   vid.play()
-  textFont("Arial");
+    textFont("Arial");
 }
 
 function draw() {
     frameRate(10);
-    // background(1)
     let charIndex = startIndex;
     let w = width / vid.width;
     let h = height / vid.height;
@@ -47,7 +36,7 @@ function draw() {
             let avg = (r + g + b) / 2
             noStroke()
             fill(avg)
-            textSize(w * 4)
+            textSize(w * 3)
             textAlign(CENTER,CENTER)
             text(
                 words.charAt(charIndex % words.length),
