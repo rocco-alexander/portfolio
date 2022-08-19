@@ -7,10 +7,10 @@ let sourceText;
 let words;
 let startIndex = 0;
 let asciiDiv;
+
 function preload() {
     sourceText = loadStrings("skillsList.txt");
-    vid = loadVideo("video.mp4");
-  }
+}
 
 function setup() {
     let canvas = createCanvas(350, 350);
@@ -23,6 +23,7 @@ function setup() {
   vid.volume(0);
   vid.loop();
   vid.hide(); // hides the html video loader
+  vid.autoplay(true)
   textFont("Arial");
   asciiDiv = createDiv()
 }
