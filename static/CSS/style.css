@@ -51,39 +51,37 @@
     margin-bottom: 0;
     font-family: 'Rubik', sans-serif;
 }
-.button__portfolio-cta{
+
+.bottom-cta{
+    margin-top: 1rem;
     width: 350px;
-    margin-bottom: 1rem;
-    /* margin-top: 1rem; */
-    border: none;
-    border: 2px solid #fff;
-    background: #000;
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.5rem;
-    font-family: 'Rubik', sans-serif;
     padding: .5rem;
-}.button__portfolio-cta a {
+    background: black;
+    color: #fff;
     text-decoration: none;
-    color: #fff
+}
+.bottom-cta:visited{
+    text-decoration: none;
+}
+.bottom-cta:hover{
+    color: #fff;
 }
 /* its a bit hacky but it works */
 
 @media only screen and (max-width: 480px) and (min-width: 280px) and (-webkit-min-device-pixel-ratio: 1){
     .hero-text{
-        margin-top: 1.5rem;
+        margin-top: rem;
     }
 	.hero-text p{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
-    .button__portfolio-cta{
+    .bottom-cta{
         margin-bottom: 0;
-        margin-top: 1rem;
-        padding: 1rem 0 1rem 0;
+        margin-top: 1.5rem;
         font-size: 1.3rem;
     }
     .white-space{
-        height: 0px;
+        display: none;
     }
 }
 
@@ -101,10 +99,6 @@
         width: 250px;
         height: 250px;
     }
-    .button__portfolio-cta{
-        width: 350px;
-        font-size: 1.5rem;
-    }
 }
 
 
@@ -119,4 +113,8 @@
 }
 canvas{
     display: block;
+    margin-top: 1.5rem;
+}
+.sketch-container span{
+    display: none;
 }
