@@ -9,14 +9,13 @@ let startIndex = 0;
 let asciiDiv;
 function preload() {
     sourceText = loadStrings("skillsList.txt");
-    // vid = loadImage("new.jpg");
+    vid = loadVideo("video.mp4");
   }
 
 function setup() {
     let canvas = createCanvas(350, 350);
     canvas.parent("ascii-container")
     vid= createVideo('video.mp4')
-    // noCanvas();
     words = sourceText.join(" ");
 
   
@@ -24,13 +23,11 @@ function setup() {
   vid.volume(0);
   vid.loop();
   vid.hide(); // hides the html video loader
-  vid.position(0.0);
   textFont("Arial");
   asciiDiv = createDiv()
 }
 
 function draw() {
-//   background(0);
 //   frameRate(10);
 let charIndex = startIndex;
 let w = width / vid.width;
@@ -58,8 +55,6 @@ for (let j = 0; j < vid.height; j++){
         );
         charIndex++
     }
-    // asciiImage +='<br/>'
-    // startIndex++
 }
 asciiDiv.html(asciiImage)
 }
