@@ -9,36 +9,36 @@ let startIndex = 0;
 let asciiDiv;
 
 function preload() {
+    vid = loadImage("rocco32.jpg")
     sourceText = loadStrings("skillsList.txt");
     vid = loadImage("ezgif-5-53e35b7cee.gif")
-    // vid = loadImage("ezgif-5-8d880efd64.gif")
+    vid = loadImage("ezgif-5-8d880efd64.gif")
 }
 
 function setup() {
     let canvas = createCanvas(350, 350);
     canvas.parent("ascii-container")
-    // vid= createVideo('video.mp4')
+    vid= createVideo('video.mp4')
     words = sourceText.join(" ");
 
     
-//   vid.size(48 ,48);
-//   vid.volume(0);
-//   vid.loop();
-//   vid.hide(); // hides the html video loader
-//   vid.autoplay(true)
+  vid.size(48 ,48);
+  vid.volume(0);
+  vid.loop();
+  vid.hide(); // hides the html video loader
+  vid.autoplay(true)
+  vid.play()
   textFont("Arial");
-  asciiDiv = createDiv()
 }
 
 function draw() {
-//   frameRate(10);
-let charIndex = startIndex;
-let w = width / vid.width;
-let h = height / vid.height;
-image(vid)
-vid.loadPixels()
-
-let asciiImage = " "
+    frameRate(10);
+    // background(0)
+    let charIndex = startIndex;
+    let w = width / vid.width;
+    let h = height / vid.height;
+    vid.loadPixels()
+    // image(vid)
 
 for (let j = 0; j < vid.height; j++){
     for (let i = 0 ; i <vid.width; i++ ){
@@ -50,8 +50,7 @@ for (let j = 0; j < vid.height; j++){
 
         noStroke()
         fill(avg)
-        textLeading(46);
-        textSize(w * 1.2);
+        textSize(w * 1.1);
         textAlign(CENTER,CENTER)
         text(
             words.charAt(charIndex % words.length),
@@ -62,5 +61,4 @@ for (let j = 0; j < vid.height; j++){
     }
 }
 // startIndex++
-// asciiDiv.html(asciiImage)
 }
