@@ -182,15 +182,10 @@ li{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Contact Section */
+label{
+    font-size: .75rem;
+}
+input, textarea{
+    border: 2px solid #000;
+}

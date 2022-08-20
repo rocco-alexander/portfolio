@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -39,10 +41,27 @@
             </ul>
         </div>
     </nav>
-   <!-- Contact Form -->
-   <div class="container">
-    <h1>This is the contact page</h1>
-   </div>
+
+    <!-- Portfolio -->
+    <div class="container">
+      <div class="heading-container text-center">
+        <h1>Let's get in touch.</h1>
+      </div>
+      <div class="form-container d-flex justify-content-center">
+        <form action="" class="contact-me d-flex flex-column text-center">
+          <!-- Email Input -->
+          <label for="email">email</label>
+          <input type="email" id="email">
+          <!-- Subject -->
+          <label for="subject">subject</label>
+          <input type="text" id="subject">
+          <!-- Body -->
+          <label for="body">subject</label>
+          <textarea name="body" id="body" cols="30" rows="10"></textarea>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
 
 <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
