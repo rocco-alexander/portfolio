@@ -48,34 +48,20 @@
         <h1>Let's get in touch.</h1>
       </div>
       <div class="form-container d-flex justify-content-center">
-        <form onsubmit="sendEmail(); reset(); return false;" action="submit" class="contact-me d-flex flex-column text-center">
+        <form action="https://formsubmit.co/56cffccb338b02cd8179207ce926ef16"  method="POST" class="contact-me d-flex flex-column text-center">
           <!-- Email Input -->
           <label for="email">email</label>
-          <input type="email" id="email">
+          <input type="email" id="email" required>
           <!-- Subject -->
           <label for="subject">subject</label>
           <input type="text" id="subject">
           <!-- Body -->
           <label for="body">information</label>
-          <textarea name="body" id="body" cols="30" rows="10"></textarea>
+          <textarea name="body" id="body" cols="30" rows="10" required></textarea>
           <button class="contact-button"type="submit">submit</button>
         </form>
       </div>
     </div>
-<!-- Email Functionality -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  const sendEmail = () =>{
-    Email.send({
-      SecureToken: "a213d471-1c8f-461e-9fe1-3aacc86c5034",
-      To : 'rocco.k.alexander@gmail.com',
-      From : document.getElementById("email").value,
-      Subject : document.getElementById("subject").value,
-      Body : document.getElementById("body").value
-  }).then(message => alert(message));  
-}
-  
-</script>
 <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
