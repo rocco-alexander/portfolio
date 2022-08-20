@@ -21,6 +21,7 @@ function setup() {
 
 function draw() {
     frameRate(10);
+    // background(0)
     let charIndex = startIndex;
     let w = width / img.width;
     let h = height / img.height;
@@ -36,7 +37,7 @@ function draw() {
             let avg = (r + g + b) / 2
             noStroke()
             fill(avg)
-            textSize(w * 3)
+            textSize(w * 2.5)
             textAlign(CENTER,CENTER)
             text(
                 words.charAt(charIndex % words.length),

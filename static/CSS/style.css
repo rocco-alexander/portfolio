@@ -117,6 +117,9 @@ canvas{
 }
 
 /* FOR RESUME PAGE */
+.resume-top{
+    margin-top: 2rem;
+}
 .resume-body{
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -133,6 +136,7 @@ canvas{
     padding: .5rem 1rem .5rem 1rem;
     margin: 0 1rem 1rem 0;
 }
+
 .contact-information a{
     display: flex;
     justify-content: flex-end;
@@ -140,21 +144,40 @@ canvas{
     color:black;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    margin: 0;
 }
 
 li{
     list-style-type: square;
 }
+
 .resume-name h2{
     font-weight: bolder;
     font-size: 3rem;
+    display: inline-block;
+    border-bottom: 10px solid #000;
 }
 
-@media only screen and (max-width: 480px) and (min-width: 280px) and (-webkit-min-device-pixel-ratio: 1){
-    .contact-information a{
-        margin: 1rem 0 1rem 0;
+.duty-item{
+    margin-bottom: 1rem;
+}
 
+.resume-block-item{
+    margin-bottom: 1.5rem;
+}
+.subheading-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 767px) and (min-width: 280px) and (-webkit-min-device-pixel-ratio: 1){
+    .contact-information a{
+        /* margin: 1rem 0 0 0; */
+        font-size: 1rem;
         justify-content: flex-start;
+    }
+    .subheading-container{
+        display: block;
     }
 }
 
