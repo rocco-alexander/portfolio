@@ -203,3 +203,6 @@ input, textarea{
     color: #fff;
     width: 350px;
 }
+#form-status{
+    margin-top: 1rem;
+}

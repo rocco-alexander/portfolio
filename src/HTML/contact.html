@@ -48,13 +48,7 @@
         <h1>Let's get in touch.</h1>
       </div>
       <div class="form-container d-flex justify-content-center">
-        <form action="https://formspree.io/f/mdojoqqo"  method="POST" class="contact-me d-flex flex-column text-center">
-          <!-- Honeypot -->
-          <input type="text" name="_honey" style="display:none;">
-          <!-- Skip Capcha -->
-          <input type="hidden" name="_capcha" value="false">
-          <!-- Return to Form -->
-          <input type="hidden" name="_next" value="https://www.roccoalexander.com/success.html">
+        <form id="contact-form" action="https://formspree.io/f/mdojoqqo"  method="POST" class="contact-me d-flex flex-column text-center">
           <!-- Email Input -->
           <label for="email">email</label>
           <input type="email" id="email" required>
@@ -65,9 +59,48 @@
           <label for="body">information</label>
           <textarea name="body" id="body" cols="30" rows="10" required></textarea>
           <button class="contact-button"type="submit">submit</button>
+          <h5 id='form-status'></h5>
         </form>
       </div>
     </div>
+
+    <script>
+      var form = document.getElementById("contact-form");
+      
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("form-status");
+        var data = new FormData(event.target);
+        console.log(data)
+        console.log(form.method)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          console.log(body,response)
+          if (response.ok) {
+            status.innerHTML = "Sent! I'll get back to you soon!";
+            form.reset()
+          } else {
+            response.json().then(data => {
+              if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+              } else {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+              }
+            })
+          }
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+          console.log(error)
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+  </script>
+
 <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
