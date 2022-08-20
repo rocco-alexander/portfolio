@@ -125,7 +125,7 @@ canvas{
 .resume-heading{
     margin-bottom: 1rem;
     margin-top: 2rem;
-    border-bottom: 2px solid #000;
+    border-bottom: 4px solid #000;
 }
 .skill-item p{
     color: #fff;
