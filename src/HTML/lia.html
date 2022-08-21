@@ -13,8 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -42,60 +40,11 @@
         </div>
     </nav>
 
-    <!-- Portfolio -->
-    <div class="container">
-      <div class="heading-container text-center">
-        <h1>Let's get in touch.</h1>
-      </div>
-      <div class="form-container d-flex justify-content-center">
-        <form id="contact-form" action="https://formspree.io/f/mdojoqqo" method="POST" class="contact-me d-flex flex-column text-center">
-          <!-- Email Input -->
-          <label for="email">email</label>
-          <input type="email" id="email" name="email" required>
-          <!-- Subject -->
-          <label for="subject">subject</label>
-          <input type="text" id="subject" name="subject">
-          <!-- Body -->
-          <label for="body">information</label>
-          <textarea name="body" id="body" cols="30" rows="10" required></textarea>
-          <button class="contact-button"type="submit">submit</button>
-          <h5 id='form-status'></h5>
-        </form>
-      </div>
-    </div>
-
-    <script>
-      var form = document.getElementById("contact-form");
-      
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-              'Accept': 'application/json'
-          }
-        }).then(response => {
-          if (response.ok) {
-            status.innerHTML = "Sent! I'll get back to you soon!";
-            form.reset()
-          } else {
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-              } else {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-              }
-            })
-          }
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        });
-      }
-      form.addEventListener("submit", handleSubmit)
-  </script>
+<!-- Portfolio Item Section -->
+<div class="container text-center portfolio-item-container">
+    <h1>LIA</h1>
+    
+</div>
 
 <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>

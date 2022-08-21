@@ -1,4 +1,4 @@
-/* Home Page */
+/* Home Page --------------------------------------------------------------------*/
 .top-navigation{
     background: black;
     width: 100%;
@@ -117,7 +117,7 @@ canvas{
     display: none;
 }
 
-/* FOR RESUME PAGE */
+/* FOR RESUME PAGE -----------------------------------------------------------*/
 .resume-top{
     margin-top: 2rem;
 }
@@ -137,7 +137,6 @@ canvas{
     padding: .5rem 1rem .5rem 1rem;
     margin: 0 1rem 1rem 0;
 }
-
 .contact-information a{
     display: flex;
     justify-content: flex-end;
@@ -147,22 +146,21 @@ canvas{
     font-size: 1.2rem;
     margin: 0;
 }
-
+.summary{
+    margin-bottom: 3rem;
+}
 li{
     list-style-type: square;
 }
-
 .resume-name h2{
     font-weight: bolder;
     font-size: 3rem;
     display: inline-block;
     border-bottom: 10px solid #000;
 }
-
 .duty-item{
     margin-bottom: 1rem;
 }
-
 .resume-block-item{
     margin-bottom: 1.5rem;
 }
@@ -183,7 +181,34 @@ li{
 }
 
 
-/* Contact Section */
+/* Portfolio Selection Page --------------------*/ 
+.portfolio-container{
+    margin-top:3rem;
+}
+.portfolio-container h1{
+    margin-bottom: 3rem;
+}
+.card-anchor{
+    text-decoration: none;
+    color: #000;
+}
+.card-anchor:hover, .card-anchor:visited{
+    text-decoration: none;
+    color:#000
+}
+.card{
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 0;
+}
+
+/* Portfoloio Item Page -------------------------*/
+.portfolio-item-container{
+    margin-top: 3rem;
+}
+
+
+/* Contact Page ----------------------------------------------*/
 label{
     font-size: .75rem;
 }
