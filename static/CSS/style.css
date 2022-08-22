@@ -44,9 +44,6 @@
     margin-top: 50px;
     font-size: 60px;
     font-weight: bolder;
-}
-
-.hero-text p{
     margin-bottom: 0;
     font-family: 'Rubik', sans-serif;
 }
@@ -70,8 +67,8 @@
     .hero-text{
         margin-top: rem;
     }
-	.hero-text p{
-        font-size: 1.5rem;
+	.hero-text{
+        font-size: 2rem;
     }
     .bottom-cta{
         margin-bottom: 0;
@@ -93,7 +90,7 @@
     }
     .hero-text{
         margin-top: 1rem;
-        font-size: 60px;
+        font-size: 2rem;
         font-weight: bolder;
     }
     .hero{
